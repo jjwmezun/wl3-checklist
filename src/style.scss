@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Rambla';
+    src: url('Rambla-Regular.woff2') format('woff2'),
+        url('Rambla-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rambla';
+    src: url('Rambla-Bold.woff2') format('woff2'),
+        url('Rambla-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rambla';
+    src: url('Rambla-BoldItalic.woff2') format('woff2'),
+        url('Rambla-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rambla';
+    src: url('Rambla-Italic.woff2') format('woff2'),
+        url('Rambla-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #80f0f8;
+    color: #4a0d80;
+    font-family: 'Rambla', sans-serif;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.wl3__table
+{
+    border-collapse: collapse;
+    background-color: #4a0d80;
+    margin: 0 auto;
+
+    &,
+    td,
+    th
+    {
+        border: 1px solid #4a0d80;
+        padding: 0;
+    }
+
+    td,
+    th
+    {
+        background-color: #fff;
+    }
+
+    th
+    {
+        padding: 0.25rem 0.5rem;
+    }
+
+    tbody th
+    {
+        text-align: left;
+    }
+
+    input
+    {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        appearance: none;
+        -webkit-appearance: none;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 1.75rem;
+        margin: 0;
+        background-color: rgb(255, 60, 34);
+        align-items: center;
+        cursor: pointer;
+
+        &:before
+        {
+            content: 'X';
+            color: #fff;
+            font-weight: 900;
+            text-shadow: 1px 1px 0 #000;
+        }
+
+        &:checked
+        {
+            background-color: #68db4c;
+            &:before
+            {
+                content: '✓';
+            }
+        }
+    }
+}
+
+.wl3__total-cell
+{
+    text-align: center;
+    padding: 0.25rem 0.5rem;   
+}
+
+.wl3__table-level-order .wl3__color-name
+{
+    position: relative;
+    padding-left: 1.5rem;
+
+    &::before
+    {
+        content: ' ';
+        background-color: #4a0d80;
+        content: " ";
+        height: 100%;
+        width: 1rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+th.wl3__color-name-gray
+{
+    background-color: #e0e0e0;
+}
+
+th.wl3__color-name-red
+{
+    background-color: #ffb8bf;
+}
+
+th.wl3__color-name-green
+{
+    background-color: #abffad;
+}
+
+th.wl3__color-name-blue
+{
+    background-color: #7bfef7;
+}
+
+.wl3__order-controls
+{
+    text-align: center;
+    margin: 1rem 0;
+
+    button:not( :first-child )
+    {
+        margin-left: 1rem;
+    }
+}
+
+.wl3__import-controls
+{
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat( 3, max-content );
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.wl3__import
+{
+    align-self: center;
+}
+
+.wl3__btn
+{
+    border: 2px solid #4a0d80;
+    background-color: #4a0d80;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+
+    &:not( :disabled ):hover
+    {
+        background-color: #fff;
+        color: #4a0d80;
+    }
+
+    &:disabled
+    {
+        filter: brightness( 0.5 );
+        cursor: not-allowed;
+    }
+}
+
+@media ( min-width: 1200px )
+{
+    html
+    {
+        font-size: 125%;
+    }
+}
