@@ -46,6 +46,8 @@ body
     background-color: #80f0f8;
     color: #4a0d80;
     font-family: 'Rambla', sans-serif;
+    background-image: linear-gradient( to bottom, #d3f8fb, #4371a2 );
+    background-attachment: fixed;
 }
 
 h1
@@ -212,6 +214,131 @@ th.wl3__color-name-blue
         filter: brightness( 0.5 );
         cursor: not-allowed;
     }
+}
+
+th.wl3__level-name-n1
+{
+    background-color: rgb( 164, 226, 134 );
+}
+
+th.wl3__level-name-n2
+{
+    background-color: rgb( 174, 119, 190 );
+}
+
+th.wl3__level-name-n3
+{
+    background-color: rgb( 134, 235, 181 );
+}
+
+th.wl3__level-name-n4
+{
+    background-color: rgb( 157, 151, 232 );
+}
+
+th.wl3__level-name-n5
+{
+    background-color: rgb( 193, 220, 75 );
+}
+
+th.wl3__level-name-n6
+{
+    background-color: rgb( 252, 167, 144 );
+}
+
+th.wl3__level-name-w1
+{
+    background-color: rgb( 226, 218, 147 );
+}
+
+th.wl3__level-name-w2
+{
+    background-color: rgb( 197, 162, 96 );
+}
+
+th.wl3__level-name-w3
+{
+    background-color: rgb( 145, 198, 159 );
+}
+
+th.wl3__level-name-w4
+{
+    background-color: rgb( 155, 150, 156 );
+}
+
+th.wl3__level-name-w5
+{
+    background-color: rgb( 137, 105, 228 );
+}
+
+th.wl3__level-name-w6
+{
+    background-color: rgb( 233, 159, 159 );
+}
+
+th.wl3__level-name-s1
+{
+    background-color: rgb( 168, 233, 116 );
+}
+
+th.wl3__level-name-s2
+{
+    background-color: rgb( 217, 225, 233 );
+}
+
+th.wl3__level-name-s3
+{
+    background-color: rgb( 157, 180, 159 );
+}
+
+th.wl3__level-name-s4
+{
+    background-color: rgb( 222, 153, 112 );
+}
+
+th.wl3__level-name-s5
+{
+    background-color: rgb( 206, 48, 22 );
+}
+
+th.wl3__level-name-s6
+{
+    background-color: rgb( 241, 241, 241 );
+}
+
+th.wl3__level-name-e1
+{
+    background-color: rgb( 90, 137, 78 );
+}
+
+th.wl3__level-name-e2
+{
+    background-color: rgb( 195, 235, 234 );
+}
+
+th.wl3__level-name-e3
+{
+    background-color: rgb( 112, 148, 114 );
+}
+
+th.wl3__level-name-e4
+{
+    background-color: rgb( 177, 102, 77 );
+}
+
+th.wl3__level-name-e5
+{
+    background-color: rgb( 191, 188, 188 );
+}
+
+th.wl3__level-name-e6
+{
+    background-color: rgb( 146, 106, 170 );
+}
+
+th.wl3__level-name-e7
+{
+    background-color: rgb( 18, 148, 111 );
 }
 
 @media ( min-width: 1200px )

@@ -45,7 +45,7 @@ const treasureOrder = [
     { level: "s2", treasure: "gray", },
     { level: "n3", treasure: "green", },
     { level: "w3", treasure: "red", },
-    { level: "w3", treasure: "gray", },
+    { level: "w4", treasure: "gray", },
     { level: "w3", treasure: "green", },
     { level: "e1", treasure: "gray", },
     { level: "n2", treasure: "red", },
@@ -170,7 +170,7 @@ const LevelTable = props => {
         { levels.map( level => {
             return <tbody>
                 <tr key={ level.code }>
-                    <th>{ level.code.toUpperCase() } { level.name }</th>
+                    <th className={ `wl3__level-name wl3__level-name-${ level.code }` }>{ level.code.toUpperCase() } { level.name }</th>
                 </tr>
                 { chestColors.map( color => {
                     return <tr key={ color }>
@@ -220,7 +220,7 @@ const TreasureTable = props => {
         <tbody>
             { treasureOrder.map( ( { level, treasure } ) => {
                 return <tr key={ `${ level }-${ treasure }` }>
-                    <th>{ level.toUpperCase() } { levels.find( l => l.code === level ).name }</th>
+                    <th className={ `wl3__level-name wl3__level-name-${ level }` }>{ level.toUpperCase() } { levels.find( l => l.code === level ).name }</th>
                     <th className={ `wl3__color-name wl3__color-name-${ treasure }` }>{ treasure }</th>
                     { Array.from( { length: 3 } ).map( ( _, index ) => <>
                         <td>
